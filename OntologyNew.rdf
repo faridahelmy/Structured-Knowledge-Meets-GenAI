@@ -1,0 +1,1037 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#"
+     xml:base="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#integer -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#integer">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#didNotTakeYet -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#didNotTakeYet">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <rdfs:label>didNotTakeYet</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#droppedAttendance -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#droppedAttendance">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#failed"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <rdfs:label>droppedAttendance</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#earlier -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#earlier">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <rdfs:label>earlier</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#failed -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#failed">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <rdfs:label>failed</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#hasCompleted -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#hasCompleted">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <rdfs:label>hasCompleted</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#hasNotCompleted -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#hasNotCompleted">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <rdfs:label>hasNotCompleted</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#hasPrerequisite -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#hasPrerequisite">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <rdfs:label>hasPrerequisite</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#invalidEnrollment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#invalidEnrollment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <rdfs:label>invalidEnrollment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#regularFailed -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#regularFailed">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#failed"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <rdfs:label>regularFailed</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#satisfiesPrerequisite -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#satisfiesPrerequisite">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <rdfs:label>satisfiesPrerequisite</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#takes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#takes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <rdfs:label>takes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#GPA -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#GPA">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>GPA</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#courseCode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#courseCode">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>courseCode</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#creditHours -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#creditHours">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label>creditHours</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#evenSemester -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#evenSemester">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>evenSemester</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#hasSemester -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#hasSemester">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>hasSemester</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#isGraduationCase -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#isGraduationCase">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>isGraduationCase</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#maxCreditHours -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#maxCreditHours">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>maxCreditHours</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#oddSemester -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#oddSemester">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>oddSemester</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#onProbation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#onProbation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>onProbation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#semesterOffered -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#semesterOffered">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label>semesterOffered</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course">
+        <rdfs:label>Course</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Student">
+        <rdfs:label>Student</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Advanced_Computer_Lab2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Advanced_Computer_Lab2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <courseCode>CSEN903</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</creditHours>
+        <oddSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oddSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0</semesterOffered>
+        <rdfs:label>Advanced Computer Lab2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Advanced_Computer_Lab3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Advanced_Computer_Lab3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <hasPrerequisite rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Theory_of_Computation"/>
+        <courseCode>CSEN1002</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</creditHours>
+        <evenSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</evenSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</semesterOffered>
+        <rdfs:label>Advanced Computer Lab3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Analysis_and_Design_of_Algorithms -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Analysis_and_Design_of_Algorithms">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <courseCode>CSEN703</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</creditHours>
+        <oddSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oddSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</semesterOffered>
+        <rdfs:label>Analysis and Design of Algorithms</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Artificial_Intelligence -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Artificial_Intelligence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <hasPrerequisite rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Data_Structures_and_Algorithms"/>
+        <courseCode>CSEN901</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</creditHours>
+        <oddSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oddSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0</semesterOffered>
+        <rdfs:label>Artificial Intelligence</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Bachelor_Thesis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Bachelor_Thesis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</creditHours>
+        <evenSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</evenSemester>
+        <oddSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oddSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</semesterOffered>
+        <rdfs:label>Bachelor Thesis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Chem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Chem">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <courseCode>CHEMt102</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</creditHours>
+        <oddSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oddSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</semesterOffered>
+        <rdfs:label>Chem</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#ChemLab -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#ChemLab">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <courseCode>CHEMp101</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</creditHours>
+        <oddSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oddSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</semesterOffered>
+        <rdfs:label>ChemLab</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Compiler -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Compiler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <hasPrerequisite rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Theory_of_Computation"/>
+        <courseCode>CSEN1003</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</creditHours>
+        <evenSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</evenSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</semesterOffered>
+        <rdfs:label>Compiler</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Computer_Graphics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Computer_Graphics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <hasPrerequisite rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Data_Structures_and_Algorithms"/>
+        <hasPrerequisite rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Introduction_to_Computer_Programming"/>
+        <courseCode>DMET502</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</creditHours>
+        <oddSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oddSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</semesterOffered>
+        <rdfs:label>Computer Graphics</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Computer_Organization_and_System_Programming -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Computer_Organization_and_System_Programming">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <hasPrerequisite rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Digital_Logic_Design"/>
+        <courseCode>CSIS402</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</creditHours>
+        <evenSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</evenSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</semesterOffered>
+        <rdfs:label>Computer Organization and System Programming</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Computer_Programming_Lab -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Computer_Programming_Lab">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <hasPrerequisite rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Data_Structures_and_Algorithms"/>
+        <hasPrerequisite rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Introduction_to_Computer_Programming"/>
+        <courseCode>CSEN401</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</creditHours>
+        <evenSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</evenSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</semesterOffered>
+        <rdfs:label>Computer Programming Lab</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Computer_System_Architecture -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Computer_System_Architecture">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <hasPrerequisite rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Computer_Organization_and_System_Programming"/>
+        <hasPrerequisite rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Digital_Logic_Design"/>
+        <courseCode>CSEN601</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</creditHours>
+        <evenSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</evenSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</semesterOffered>
+        <rdfs:label>Computer System Architecture</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Computer_Vision -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Computer_Vision">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <hasPrerequisite rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Computer_Graphics"/>
+        <courseCode>DMET901</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</creditHours>
+        <oddSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oddSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0</semesterOffered>
+        <rdfs:label>Computer Vision</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Concepts_of_Programming_Languages -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Concepts_of_Programming_Languages">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <hasPrerequisite rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Introduction_to_Computer_Programming"/>
+        <courseCode>CSEN403</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</creditHours>
+        <evenSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</evenSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</semesterOffered>
+        <rdfs:label>Concepts of Programming Languages</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Data_Base_I -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Data_Base_I">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <courseCode>CSEN501</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</creditHours>
+        <oddSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oddSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</semesterOffered>
+        <rdfs:label>Data Base I</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Data_Bases_II -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Data_Bases_II">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <hasPrerequisite rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Data_Base_I"/>
+        <courseCode>CSEN604</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</creditHours>
+        <evenSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</evenSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</semesterOffered>
+        <rdfs:label>Data Bases II</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Data_Structures_and_Algorithms -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Data_Structures_and_Algorithms">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <hasPrerequisite rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Introduction_to_Computer_Programming"/>
+        <hasPrerequisite rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Introduction_to_Computer_Science"/>
+        <courseCode>CSEN301</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</creditHours>
+        <oddSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oddSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</semesterOffered>
+        <rdfs:label>Data Structures and Algorithms</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Digital_Logic_Design -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Digital_Logic_Design">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <courseCode>ELCT201</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</creditHours>
+        <evenSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</evenSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</semesterOffered>
+        <rdfs:label>Digital Logic Design</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Digital_System_Design -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Digital_System_Design">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <courseCode>CSEN605</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</creditHours>
+        <oddSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oddSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</semesterOffered>
+        <rdfs:label>Digital System Design</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Electric_Circuits_I -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Electric_Circuits_I">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <courseCode>ELCT301</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</creditHours>
+        <oddSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oddSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</semesterOffered>
+        <rdfs:label>Electric Circuits I</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Electric_Circuits_II -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Electric_Circuits_II">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <hasPrerequisite rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Electric_Circuits_I"/>
+        <courseCode>ELCT401</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</creditHours>
+        <evenSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</evenSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</semesterOffered>
+        <rdfs:label>Electric Circuits II</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Embedded_System_Architecture -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Embedded_System_Architecture">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <courseCode>CSEN701</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</creditHours>
+        <oddSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oddSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</semesterOffered>
+        <rdfs:label>Embedded System Architecture</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Farida_Test -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Farida_Test">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Student"/>
+        <didNotTakeYet rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Advanced_Computer_Lab3"/>
+        <didNotTakeYet rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Computer_Vision"/>
+        <failed rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Analysis_and_Design_of_Algorithms"/>
+        <failed rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Computer_Graphics"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Advanced_Computer_Lab2"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Artificial_Intelligence"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Bachelor_Thesis"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Chem"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#ChemLab"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Compiler"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Computer_Organization_and_System_Programming"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Computer_System_Architecture"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Concepts_of_Programming_Languages"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Data_Base_I"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Data_Bases_II"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Data_Structures_and_Algorithms"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Digital_Logic_Design"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Digital_System_Design"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Electric_Circuits_I"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Electric_Circuits_II"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Embedded_System_Architecture"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Introduction_to_Communication_Networks"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Introduction_to_Computer_Programming"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Introduction_to_Computer_Science"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Introduction_to_Management"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Introduction_to_Media_Engineering"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Mathematics_I"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Mathematics_III"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Mathematics_IV_Probability_and_Statistics"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Maths"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Microprocessors"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Network_and_Media_Lab"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Operating_Systems"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Physics"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Physics_II"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Production_Technology"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Project_Management"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Seminar"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Signal_and_System_Theory"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Software_Engineering"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Theory_of_Computation"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#&apos;Advanced_Computer_Lab&apos;"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#&apos;Computer_and_Network_Security&apos;"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Engineering_Drawing_&amp;_Design"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Mathematics_V_(Discrete_Math)"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Physics_III_(p)"/>
+        <hasCompleted rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Physics_III_(t)"/>
+        <GPA rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.78</GPA>
+        <isGraduationCase rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isGraduationCase>
+        <rdfs:label>Farida_Test</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Introduction_to_Communication_Networks -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Introduction_to_Communication_Networks">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <hasPrerequisite rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Data_Structures_and_Algorithms"/>
+        <courseCode>CSEN503</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</creditHours>
+        <oddSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oddSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</semesterOffered>
+        <rdfs:label>Introduction to Communication Networks</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Introduction_to_Computer_Programming -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Introduction_to_Computer_Programming">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <hasPrerequisite rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Introduction_to_Computer_Science"/>
+        <courseCode>CSEN202</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</creditHours>
+        <evenSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</evenSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</semesterOffered>
+        <rdfs:label>Introduction to Computer Programming</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Introduction_to_Computer_Science -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Introduction_to_Computer_Science">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <courseCode>CSEN102</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</creditHours>
+        <oddSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oddSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</semesterOffered>
+        <rdfs:label>Introduction to Computer Science</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Introduction_to_Management -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Introduction_to_Management">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <courseCode>MNGT601</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</creditHours>
+        <evenSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</evenSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</semesterOffered>
+        <rdfs:label>Introduction to Management</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Introduction_to_Media_Engineering -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Introduction_to_Media_Engineering">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <hasPrerequisite rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Introduction_to_Computer_Programming"/>
+        <courseCode>DMET501</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</creditHours>
+        <oddSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oddSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</semesterOffered>
+        <rdfs:label>Introduction to Media Engineering</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Mathematics_I -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Mathematics_I">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <hasPrerequisite rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Maths"/>
+        <courseCode>MATH203</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</creditHours>
+        <evenSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</evenSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</semesterOffered>
+        <rdfs:label>Mathematics I</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Mathematics_III -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Mathematics_III">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <hasPrerequisite rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Mathematics_I"/>
+        <hasPrerequisite rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Maths"/>
+        <courseCode>MATH301</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</creditHours>
+        <oddSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oddSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</semesterOffered>
+        <rdfs:label>Mathematics III</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Mathematics_IV_Probability_and_Statistics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Mathematics_IV_Probability_and_Statistics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <hasPrerequisite rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Mathematics_I"/>
+        <hasPrerequisite rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Mathematics_III"/>
+        <hasPrerequisite rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Maths"/>
+        <courseCode>MATH401</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</creditHours>
+        <evenSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</evenSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</semesterOffered>
+        <rdfs:label>Mathematics IV Probability and Statistics</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Maths -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Maths">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <courseCode>MATH103</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</creditHours>
+        <oddSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oddSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</semesterOffered>
+        <rdfs:label>Maths</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Microprocessors -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Microprocessors">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <hasPrerequisite rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Computer_System_Architecture"/>
+        <courseCode>CSEN702</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</creditHours>
+        <oddSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oddSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</semesterOffered>
+        <rdfs:label>Microprocessors</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Network_and_Media_Lab -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Network_and_Media_Lab">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <hasPrerequisite rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Introduction_to_Communication_Networks"/>
+        <courseCode>DMET602</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</creditHours>
+        <evenSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</evenSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</semesterOffered>
+        <rdfs:label>Network and Media Lab</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Operating_Systems -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Operating_Systems">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <hasPrerequisite rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Data_Structures_and_Algorithms"/>
+        <courseCode>CSEN602</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</creditHours>
+        <evenSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</evenSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</semesterOffered>
+        <rdfs:label>Operating Systems</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Physics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Physics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <courseCode>PHYS101</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</creditHours>
+        <oddSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oddSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</semesterOffered>
+        <rdfs:label>Physics</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Physics_II -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Physics_II">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <hasPrerequisite rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Physics"/>
+        <courseCode>PHYS202</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</creditHours>
+        <evenSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</evenSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</semesterOffered>
+        <rdfs:label>Physics II</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Production_Technology -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Production_Technology">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <courseCode>EDPT201</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</creditHours>
+        <oddSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oddSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</semesterOffered>
+        <rdfs:label>Production Technology</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Project_Management -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Project_Management">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <courseCode>HUMA1001</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</creditHours>
+        <evenSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</evenSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</semesterOffered>
+        <rdfs:label>Project Management</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Seminar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Seminar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</creditHours>
+        <evenSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</evenSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</semesterOffered>
+        <rdfs:label>Seminar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Signal_and_System_Theory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Signal_and_System_Theory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <courseCode>COMM401</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</creditHours>
+        <evenSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</evenSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</semesterOffered>
+        <rdfs:label>Signal and System Theory</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Software_Engineering -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Software_Engineering">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <courseCode>CSEN603</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</creditHours>
+        <evenSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</evenSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</semesterOffered>
+        <rdfs:label>Software Engineering</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Theory_of_Computation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Theory_of_Computation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <hasPrerequisite rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Introduction_to_Computer_Programming"/>
+        <courseCode>CSEN502</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</creditHours>
+        <oddSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oddSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</semesterOffered>
+        <rdfs:label>Theory of Computation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#&apos;Advanced_Computer_Lab&apos; -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#&apos;Advanced_Computer_Lab&apos;">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <courseCode>CSEN704</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</creditHours>
+        <oddSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oddSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</semesterOffered>
+        <rdfs:label>Advanced Computer Lab</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#&apos;Computer_and_Network_Security&apos; -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#&apos;Computer_and_Network_Security&apos;">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <courseCode>CSEN1001</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</creditHours>
+        <evenSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</evenSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</semesterOffered>
+        <rdfs:label>Computer and Network Security</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Engineering_Drawing_&amp;_Design -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Engineering_Drawing_&amp;_Design">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <courseCode>ENGD301</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</creditHours>
+        <evenSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</evenSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</semesterOffered>
+        <rdfs:label>Engineering Drawing &amp; Design</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Mathematics_V_(Discrete_Math) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Mathematics_V_(Discrete_Math)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <courseCode>MATH501</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</creditHours>
+        <oddSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oddSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</semesterOffered>
+        <rdfs:label>Mathematics V (Discrete Math)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Physics_III_(p) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Physics_III_(p)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <courseCode>PHYSp301</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</creditHours>
+        <oddSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oddSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</semesterOffered>
+        <rdfs:label>Physics III (p)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Physics_III_(t) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Physics_III_(t)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Course"/>
+        <hasPrerequisite rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Physics"/>
+        <hasPrerequisite rdf:resource="http://www.semanticweb.org/faridahelmy/ontologies/2024/10/untitled-ontology-11#Physics_II"/>
+        <courseCode>PHYSt301</courseCode>
+        <creditHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</creditHours>
+        <oddSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oddSemester>
+        <semesterOffered rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</semesterOffered>
+        <rdfs:label>Physics III (t)</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
